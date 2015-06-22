@@ -3,7 +3,7 @@
     - [Welcome](/docs/cakeadmin/1.0/index)
     - [Installation](/docs/cakeadmin/1.0/installation)
 - Tutorials and Examples
-    - ['Adding PostTypes'](/docs/cakeadmin.1.0/tutorials-and-examples/adding-posttypes)
+    - [Adding PostTypes](/docs/cakeadmin.1.0/tutorials-and-examples/adding-posttypes)
 - Components
 - Controllers
 - Models
