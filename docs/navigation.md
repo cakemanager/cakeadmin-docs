@@ -1,0 +1,16 @@
+
+- Getting Started
+    - [Welcome](/docs/cakeadmin/1.0/index)
+    - [Installation](/docs/cakeadmin/1.0/installation)
+- Tutorials and Examples
+    - ['Adding PostTypes'](/docs/cakeadmin.1.0/tutorials-and-examples/adding-posttypes)
+- Components
+- Controllers
+- Models
+    - [AdministratorsModel](/docs/cakeadmin/1.0/models/administrators)
+- General
+    - [Configurations](/docs/cakeadmin/1.0/general/configurations)
+- Contributing
+	- [Documentation](/docs/cakeadmin/1.0/contributing/documentation)
+	- [Coding Standards](/docs/cakeadmin/1.0/contributing/coding-standards)
+	- [How To Contribute](/docs/cakeadmin/1.0/contributing/how-to-contribute)
