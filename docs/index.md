@@ -1,4 +1,4 @@
-Welcome to CakeManager documentation!
+Welcome to CakeAdmin documentation!
 =====================================
 
 [doc_toc]
