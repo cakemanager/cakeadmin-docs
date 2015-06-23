@@ -28,4 +28,16 @@ Under the `CA.Models` key all models to create PostTypes of are stored. Use the 
 
     Configure::write('CA.Models.blogs', 'Blogs');
     
+Theming
+-------
+
+The default theme and layouts for the admin panel are changeable by this keys:
+
+    // Changing the theme
+    Configure::write('CA.theme', 'LighStrap');
+     
+    // Changing the default layout
+    Configure::write('CA.layout.default', 'customDefault');
     
+    // Changing the login layout (for unauthorized pages)
+    Configure::write('CA.layout.login', 'customLogin');
