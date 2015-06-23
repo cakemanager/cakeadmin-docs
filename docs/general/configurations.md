@@ -34,7 +34,7 @@ Theming
 The default theme and layouts for the admin panel are changeable by this keys:
 
     // Changing the theme
-    Configure::write('CA.theme', 'LighStrap');
+    Configure::write('CA.theme', 'LightStrap');
      
     // Changing the default layout
     Configure::write('CA.layout.default', 'customDefault');
