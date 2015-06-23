@@ -43,6 +43,7 @@ The following configurations can be done:
 - `alias` - Alias (humanized name) of the PostType. Automatically generated.
 - `description` - Description of the PostType. Default `null`.
 - `filters` - Array of filters to use (SearchComponent of the Utils-plugin).
+- `query` - Custom query-function to customize your queries.
 - `tableColumns` - Array of the columns of the table to use.
 - `formFields` - Array of the fields of the form to use.
 
@@ -57,6 +58,9 @@ selection by changing the `tableColumns`-key of the PostTypes configs. Look at t
             'tableColumns' => [
                 'id',
                 'name',
+                'category_id' => [
+                    'get' => 'category.name'
+                ]
                 'created_by',
                 'modified_by',
             ]
@@ -64,6 +68,8 @@ selection by changing the `tableColumns`-key of the PostTypes configs. Look at t
     }
         
 This is your own selection of columns to show on your 'index'-action.
+
+The `get`-key will be explained [here](#queries-and-getters).
 
 FormFields
 ----------
@@ -100,3 +106,35 @@ Sometimes you need a drop-down with a list to choose one. This is automatically 
 adding your relations well in your model. Check out this docs about associations: 
 http://book.cakephp.org/3.0/en/orm/associations.html.
 
+Queries and Getters
+-------------------
+
+Sometimes you want to manipulate your queries. This can be done by using the `query`-key. You have to give it a function
+wich gets a `Query`-object, and returns a `Query`-object.
+
+    public function postType() {
+        return [
+            'query' => function($query) {
+                $query->contain('Comments');
+                return $query;
+            }
+        ];
+    }
+    
+When your result-item will have contained data, you can use the `get`-key:
+
+    public function postType() {
+        return [
+            'tableColumns' => [
+                'id',
+                'name',
+                'category_id' => [
+                    'get' => 'category.name'
+                ]
+                'created_by',
+                'modified_by',
+            ]
+        ];
+    }
+    
+By using this key, you won't see an related primary key, but the wanted value.
