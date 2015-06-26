@@ -31,8 +31,10 @@ Creating the tables
 -------------------
 
     $ bin/cake migrations migrate -p CakeAdmin
+    $ bin/cake migrations migrate -p Notifier
+    $ bin/cake migrations migrate -p Settings
     
-This command tells the Migrations-plugin to migrate (install) the CakeAdmin tables.
+This command tells the Migrations-plugin to migrate (create) all needed tables.
 
 Creating an user
 ----------------
