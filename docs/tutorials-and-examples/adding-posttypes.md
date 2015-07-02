@@ -60,7 +60,7 @@ selection by changing the `tableColumns`-key of the PostTypes configs. Look at t
                 'name',
                 'category_id' => [
                     'get' => 'category.name'
-                ]
+                ],
                 'created_by',
                 'modified_by',
             ]
