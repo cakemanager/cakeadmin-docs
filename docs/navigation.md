@@ -4,6 +4,7 @@
     - [Installation](/docs/cakeadmin/1.0/installation)
 - Tutorials and Examples
     - [Adding PostTypes](/docs/cakeadmin/1.0/tutorials-and-examples/adding-posttypes)
+    - [Custom Controllers](/docs/cakeadmin/1.0/tutorials-and-examples/custom-controllers)
 - Components
 - Controllers
 - Models
