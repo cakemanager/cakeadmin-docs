@@ -42,6 +42,7 @@ The following configurations can be done:
 - `name` - Name of the PostType. Automatically generated.
 - `alias` - Alias (humanized name) of the PostType. Automatically generated.
 - `description` - Description of the PostType. Default `null`.
+- `actions` - Array with actions as key and bool as value to enable or disable actions. Default all actions are enabled.
 - `filters` - Array of filters to use (SearchComponent of the Utils-plugin).
 - `query` - Custom query-function to customize your queries.
 - `tableColumns` - Array of the columns of the table to use.
@@ -138,3 +139,25 @@ When your result-item will have contained data, you can use the `get`-key:
     }
     
 By using this key, you won't see an related primary key, but the wanted value.
+
+Events
+------
+
+The following events are available for every PostType:
+- `Controller.PostTypes.*PostTypeName*.beforeIndex` - Fired before the action `index` has been fired.
+- `Controller.PostTypes.*PostTypeName*.afterIndex` - Fired after the action `index` has been fired.
+- `Controller.PostTypes.*PostTypeName*.beforeAdd` - Fired before the action `add` has been fired.
+- `Controller.PostTypes.*PostTypeName*.afterAdd` - Fired after the action `add` has been fired.
+- `Controller.PostTypes.*PostTypeName*.beforeEdit` - Fired before the action `edit` has been fired. The variable `id`
+has been given as second parameter.
+- `Controller.PostTypes.*PostTypeName*.afterEdit` - Fired after the action `edit` has been fired. The variable `id`
+has been given as second parameter.
+- `Controller.PostTypes.*PostTypeName*.beforeView` - Fired before the action `view` has been fired. The variable `id`
+has been given as second parameter.
+- `Controller.PostTypes.*PostTypeName*.afterView` - Fired after the action `view` has been fired. The variable `id`
+has been given as second parameter.
+- `Controller.PostTypes.*PostTypeName*.beforeDelete` - Fired before the action `delete` has been fired. The variable `id`
+has been given as second parameter.
+- `Controller.PostTypes.*PostTypeName*.afterDelete` - Fired after the action `delete` has been fired. The variable `id`
+has been given as second parameter.
+
