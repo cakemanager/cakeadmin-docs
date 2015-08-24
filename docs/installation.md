@@ -11,8 +11,8 @@ Requirements
 - A fresh copy of CakePHP 3.x
 - Composer
 
-Getting the CakeManager
------------------------
+Getting the CakeAdmin Plugin
+----------------------------
 
 You can get the plugin by running the following command:
 
@@ -27,21 +27,22 @@ Use your shell...
 
     Plugin::load('CakeAdmin', ['bootstrap' => true, 'routes' => true]);
 
-Creating the tables
--------------------
+Installation
+------------
 
-    $ bin/cake migrations migrate -p CakeAdmin
-    $ bin/cake migrations migrate -p Notifier
-    $ bin/cake migrations migrate -p Settings
+Now you need to migrate the plugin and its dependencies. There is an easy way to install the whole plugin in once:
+
+    $ bin/cake cainstall
     
-This command tells the Migrations-plugin to migrate (create) all needed tables.
+This command will prepare everything for the CakeAdmin Plugin. At the end of the installation you have to enter your
+e-mailaddress and password (won't be hidden!).
 
 Creating an user
 ----------------
 
-Now you need an administrator-account to login. Run the following command in your shell:
+If you need multiple administrators, run the following command in your shell to create an administrator:
 
-    $ bin/cake admin newAdmin
+    $ bin/cake admin
     
 This command will request your e-mailaddress and (shown!) password.
 
