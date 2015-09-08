@@ -41,12 +41,17 @@ The following configurations can be done:
 - `slug` - Slug of the PostType. Automatically generated.
 - `name` - Name of the PostType. Automatically generated.
 - `alias` - Alias (humanized name) of the PostType. Automatically generated.
+- `aliasLc` - Same as above, but lower-cased.
+- `singularAlias` - Alias (humanized name, in singular form) of the PostType. Automatically generated.
+- `singularAliasLc` - Same as above, but lower-cased.
 - `description` - Description of the PostType. Default `null`.
 - `actions` - Array with actions as key and bool as value to enable or disable actions. Default all actions are enabled.
 - `filters` - Array of filters to use (SearchComponent of the Utils-plugin).
 - `query` - Custom query-function to customize your queries.
 - `tableColumns` - Array of the columns of the table to use.
 - `formFields` - Array of the fields of the form to use.
+
+> Note: Want to read more about register PostTypes? Go to [this section](/docs/cakeadmin/1.0/components/posttypes).
 
 TableColumns
 ------------

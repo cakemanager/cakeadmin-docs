@@ -1,4 +1,4 @@
-AdministratorsModel
+Administrators Model
 ====================
 
 The AdministratorsModel handles the administrators of your application.

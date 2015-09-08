@@ -6,9 +6,10 @@
     - [Adding PostTypes](/docs/cakeadmin/1.0/tutorials-and-examples/adding-posttypes)
     - [Custom Controllers](/docs/cakeadmin/1.0/tutorials-and-examples/custom-controllers)
 - Components
-- Controllers
+    - [CakeAdmin](/docs/cakeadmin/1.0/components/cakeadmin)
+    - [PostTypes](/docs/cakeadmin/1.0/components/posttypes)
 - Models
-    - [AdministratorsModel](/docs/cakeadmin/1.0/models/administrators)
+    - [Administrators](/docs/cakeadmin/1.0/models/administrators)
 - General
     - [Configurations](/docs/cakeadmin/1.0/general/configurations)
 - Contributing
