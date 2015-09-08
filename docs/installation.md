@@ -37,6 +37,11 @@ Now you need to migrate the plugin and its dependencies. There is an easy way to
 This command will prepare everything for the CakeAdmin Plugin. At the end of the installation you have to enter your
 e-mailaddress and password (won't be hidden!).
 
+If you have trouble with this way of commands, run the following:
+-    `$ bin/cake migrations migrate -p CakeAdmin`
+-    `$ bin/cake migrations migrate -p Notifier`		
+-    `$ bin/cake migrations migrate -p Settings`
+
 Creating an user
 ----------------
 
