@@ -30,17 +30,13 @@ Use your shell...
 Installation
 ------------
 
-Now you need to migrate the plugin and its dependencies. There is an easy way to install the whole plugin in once:
+Now you need to migrate the plugin and its dependencies:
 
-    $ bin/cake cainstall
-    
-This command will prepare everything for the CakeAdmin Plugin. At the end of the installation you have to enter your
-e-mailaddress and password (won't be hidden!).
+    $ bin/cake migrations migrate -p CakeAdmin
+    $ bin/cake migrations migrate -p Notifier		
+    $ bin/cake migrations migrate -p Settings
 
-If you have trouble with this way of commands, run the following:
--    `$ bin/cake migrations migrate -p CakeAdmin`
--    `$ bin/cake migrations migrate -p Notifier`		
--    `$ bin/cake migrations migrate -p Settings`
+> Note: in the next release the following will be able: `$ bin/cake cainstall`. This will run all migrations at once.
 
 Creating an user
 ----------------
