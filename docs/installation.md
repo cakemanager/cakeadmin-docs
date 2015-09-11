@@ -1,7 +1,7 @@
 Installation
 ============
 
-This section gives a brief description how to install the CakeAdmin Plugin and it's requirements.
+This section gives a brief description how to install the CakeAdmin Plugin and its requirements.
 
 [doc_toc]
 
