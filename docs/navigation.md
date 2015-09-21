@@ -3,6 +3,7 @@
     - [Welcome](/docs/cakeadmin/1.0/index)
     - [Installation](/docs/cakeadmin/1.0/installation)
 - Tutorials and Examples
+    - [Quick Start](/docs/cakeadmin/1.0/tutorials-and-examples/quick-start)
     - [Adding PostTypes](/docs/cakeadmin/1.0/tutorials-and-examples/adding-posttypes)
     - [Custom Controllers](/docs/cakeadmin/1.0/tutorials-and-examples/custom-controllers)
 - Components
