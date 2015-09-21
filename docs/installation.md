@@ -30,13 +30,16 @@ Use your shell...
 Installation
 ------------
 
-Now you need to migrate the plugin and its dependencies:
+Now you need to install the plugins. This will load its migrations:
 
-    $ bin/cake migrations migrate -p CakeAdmin
-    $ bin/cake migrations migrate -p Notifier		
-    $ bin/cake migrations migrate -p Settings
+    $ bin/cake cainstall
 
-> Note: in the next release the following will be able: `$ bin/cake cainstall`. This will run all migrations at once.
+> Note: Got stuck? Run these commands:
+    ```
+        "$ bin/cake migrations migrate -p CakeAdmin"
+        "$ bin/cake migrations migrate -p Notifier"
+        "$ bin/cake migrations migrate -p Settings"
+    ```
 
 Creating an user
 ----------------
