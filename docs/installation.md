@@ -53,7 +53,7 @@ This command will request your e-mailaddress and (shown!) password.
 Done
 ----
 
-Congratulations! You are ready to login at `yourwebsite.com/login`! After you logged in you are able to manage your 
+Congratulations! You are ready to login at `yourwebsite.com/admin`! After you logged in you are able to manage your 
 data, expand the back and and use many CakeAdmin-compatible plugins.
 
 Further reading
