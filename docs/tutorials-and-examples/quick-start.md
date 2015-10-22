@@ -114,9 +114,6 @@ public function postType() {
             'id',
             'title',
             'created',
-        ],
-        'contain' => [
-            'Categories'
         ]
     ];
 }
