@@ -80,7 +80,6 @@ CREATE TABLE `blogs` (
 	`body` TEXT NULL,
 	`image` VARCHAR(250) NULL DEFAULT NULL,
 	`featured` VARCHAR(250) NULL DEFAULT NULL,
-	`category_id` INT(11) NULL DEFAULT NULL,
 	`created_by` INT(11) NULL DEFAULT NULL,
 	`modified_by` INT(11) NULL DEFAULT NULL,
 	`created` DATETIME NULL DEFAULT NULL,
@@ -107,7 +106,6 @@ public function postType() {
             'id',
             'title',
             'body',
-            'category_id',
             'image' => [
                 'type' => 'file'
             ]
@@ -115,13 +113,7 @@ public function postType() {
         'tableColumns' => [
             'id',
             'title',
-            'category_id' => [
-                'get' => 'category.name'
-            ],
             'created',
-            'created_by' => [
-                'get' => 'created_by.email'
-            ]
         ],
         'contain' => [
             'Categories'
